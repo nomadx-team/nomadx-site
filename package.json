@@ -4,7 +4,9 @@
   "version": "0.1.0",
   "description": "Template for simple gh-pages projects",
   "main": "./docs/index.html",
-  "dependencies": {},
+  "dependencies": {
+    "@ionic/core": "^4.0.0-alpha.7"
+  },
   "devDependencies": {
     "await-exec": "^0.1.0",
     "inquirer": "^5.0.1",
