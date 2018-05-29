@@ -1,9 +1,37 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    font-size: 16px;
+    width: 100vw;
+    height: 100vh;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
 body {
-    max-width: var(--max-width);
-    margin: 0 auto;
     font-family: var(--font-family-body);
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-family-display);
+main {
+    width: 100%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+::selection {
+    background: #e1ecff;
+}
+
+::-moz-selection {
+    background: #e1ecff;
+}
+
+*:focus {
+    outline-offset: var(--border-width);
+    outline-style: dashed;
+    outline-width: var(--border-width);
+    outline-color: var(--accent);
 }

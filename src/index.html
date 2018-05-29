@@ -11,14 +11,48 @@
   
   <body>
 
-    <main>
-      <img width="256" src="https://raw.githubusercontent.com/nomadx-team/nomadx-logo/master/logomark.svg?sanitize=true" alt="Nomadx logo">
-      <h2>Awesome, accessible web components</h2>
+    <header>
 
-      <div class="buttons">
-        <button>Get Started</button>
-        <button>Learn More</button>
-      </div>
+    </header>
+
+    <main>
+      
+      <section class="hero">
+        <img width="256" src="./assets/images/logomark.svg" alt="Nomadx logo">
+        <h2>Awesome, accessible web components.</h2>
+        <p>Coming soon.</p>
+      </section>
+
+      <section class="signup">
+        <label for="newsletter">Email</label>
+        <input id="newsletter" type="email" tabindex="0" placeholder="my@email.com">
+        <button>Send Me Updates</button>
+        <!-- <button class="outline">Learn More</button> -->
+      </section>
+
+      <section class="three-up">
+        <div>
+          <img src="./assets/images/icons/easy.svg"/>
+          <div class="description">
+            <h3>Easy</h3>
+            <p>Nomadx Elements are just vanilla web components, so styling and functionality is included with a single import. Getting started couldn't be easier.</p>
+          </div>
+        </div>
+        <div>
+          <img src="./assets/images/icons/fast.svg"/>
+          <div class="description">
+            <h3>Fast</h3>
+            <p>Thanks to <a href="https://stenciljs.com">Stencil's</a> performant renderer, Nomadx Elements are built for speed. Since there are no uneccesary updates to elements, performance should be lightning fast.</p>
+          </div>
+        </div>
+        <div>
+          <img src="./assets/images/icons/accessible.svg"/>
+          <div class="description">
+            <h3>Accessible</h3>
+            <p>There are a lot of UI Component Libraries out there, but few built with accessibility as their core focus. Every Nomadx Element is built to be accessible to assistive technology, clear and consistent, and up-to-standards.</p>
+          </div>
+        </div>
+      </section>
     </main>
       
     <script src="./scripts/main.ts"></script>

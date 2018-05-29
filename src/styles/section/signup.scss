@@ -1,0 +1,24 @@
+section.signup {
+    max-width: calc(var(--max-width) * .67);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: stretch;
+    min-height: 128px;
+    margin-bottom: 128px;
+
+    input#newsletter {
+        width: 100%;
+    }
+
+    label[for="newsletter"] {
+        opacity: 0;
+        width: 0;
+        height: 0;
+        display: none;
+    }
+
+    button {
+        white-space: nowrap;
+    }
+}

@@ -1,0 +1,12 @@
+section.hero {
+    height: 540px;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+
+    h2 {
+        text-align: center;
+    }
+}

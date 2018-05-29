@@ -1,0 +1,33 @@
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-family-display);
+}
+
+a {
+    position: relative;
+    display: inline-block;
+    color: var(--accent);
+    font-weight: bold;
+    text-decoration: none;
+    transform: translateY(0);
+    transition: 150ms all cubic-bezier(0.23, 1, 0.320, 1);
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        height: 2px;
+        width: 100%;
+        transform: scaleX(0);
+        background-color: var(--accent);
+        transition: 150ms all cubic-bezier(0.23, 1, 0.320, 1);
+    }
+
+    &:hover, &:focus {
+        transform: translateY(-1px);
+
+        &::after {
+            transform: scaleX(1);
+        }
+    }
+}

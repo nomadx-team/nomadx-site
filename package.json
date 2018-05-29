@@ -14,7 +14,7 @@
     "typescript": "^2.6.2"
   },
   "scripts": {
-    "start": "parcel serve src/index.html -d ./",
+    "start": "parcel serve ./src/index.html",
     "build": "NODE_ENV=production parcel build src/index.html --public-url . -d ./",
     "predeploy": "npm run build",
     "deploy": "node ./scripts/deploy.js"
