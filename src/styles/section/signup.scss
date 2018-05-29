@@ -1,4 +1,5 @@
 section.signup {
+    padding: 0 16px;
     max-width: calc(var(--max-width) * .67);
     margin: 0 auto;
     display: flex;
@@ -7,8 +8,11 @@ section.signup {
     min-height: 128px;
     margin-bottom: 128px;
 
+    flex-flow: column nowrap;
+
     input#newsletter {
         width: 100%;
+        margin-bottom: 16px;
     }
 
     label[for="newsletter"] {
@@ -20,5 +24,15 @@ section.signup {
 
     button {
         white-space: nowrap;
+    }
+}
+
+@media screen and (min-width: 640px) {
+    section.signup {
+        flex-flow: row nowrap;
+        
+        input#newsletter {
+            margin-bottom: 0;
+        }
     }
 }
