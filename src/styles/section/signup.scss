@@ -8,12 +8,26 @@ section.signup {
     min-height: 128px;
     margin-bottom: 128px;
 
-    flex-flow: column nowrap;
-
-    input#newsletter {
+    #mc_embed_signup {
         width: 100%;
-        margin-bottom: 16px;
+
+        #mc_embed_signup_scroll {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: stretch;
+            flex-flow: column nowrap;
+        }
+
+        
+        input[type="email"] {
+            width: 100%;
+            margin-top: 12px;
+            margin-bottom: 16px;
+        }
     }
+
+
 
     label[for="newsletter"] {
         opacity: 0;
@@ -29,7 +43,21 @@ section.signup {
 
 @media screen and (min-width: 640px) {
     section.signup {
-        flex-flow: row nowrap;
+
+        #mc_embed_signup #mc_embed_signup_scroll {
+            label {
+                width: 100%;
+                text-align: center;
+            }
+            input[type="email"] {
+                width: 67%;
+            }
+            input[type="submit"] {
+                margin-top: 12px;
+                margin-bottom: 16px;
+            }
+            flex-flow: row wrap;
+        }
         
         input#newsletter {
             margin-bottom: 0;

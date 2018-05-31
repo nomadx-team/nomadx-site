@@ -1,4 +1,4 @@
-button, [role="button"] {
+button, [role="button"], input[type="submit"] {
     position: relative;
     border: var(--border-width) solid black;
     background: #000;
